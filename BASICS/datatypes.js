@@ -20,3 +20,17 @@ console.log(typeof null)    ; // object
 console.log(typeof "hello"); // string
 console.log(typeof true); // boolean
 
+const myobject={
+    name:"tanish",
+    age:22,
+    isStudent:true,
+    address:{
+        city:"New York",
+        state:"NY"
+    }
+}
+const myarray=[1,2,3,4,5];
+const myfunction=function(){
+    console.log("hello");
+}
+ // https://262.ecma-international.org/5.1/#sec-11.4.3
