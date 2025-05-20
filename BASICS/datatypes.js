@@ -34,3 +34,11 @@ const myfunction=function(){
     console.log("hello");
 }
  // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+ //MEMORY
+// 1. stack memory
+// 2. heap memory
+// stack memory is used for primitive data types
+// heap memory is used for reference data types
+// stack memory is used for function calls
+// heap memory is used for objects
