@@ -1,10 +1,12 @@
+/*
 const number=400
 const num = new Number(400.12) // Number object
 // if you declare a number using new keyword, it becomes an object and it will be shown as
 // [Number: 400] will be a dictionary object so it will look like {
 //   [[PrimitiveValue]]: 400
 // }
-console.log(num);   
+console.log(num);   // [Number: 400.12] (Number object)
+console.log(typeof num); // 'object' (type of the Number object)
 const num_s=num.toString();
 console.log(num_s); // '400' (string representation of the number)
 console.log(num_s.length)
@@ -32,5 +34,10 @@ console.log(Math.pow(2, 3)) // 8 (2 raised to the power of 3)
 console.log(Math.log(10)) // 2.302585092994046 (natural logarithm)
 console.log(Math.log10(100)) // 2 (base 10 logarithm)
 console.log(Math.sin(Math.PI / 2)) // 1 (sine of PI/2)
+console.log(Math.random() * 100) // random number between 0 and 100;
+*/
+const max=20
+const min=10
+console.log(Math.floor(Math.random()*(max-min+1)+min))
 
 
