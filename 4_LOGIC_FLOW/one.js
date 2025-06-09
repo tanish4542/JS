@@ -23,3 +23,19 @@ else if (a > b) {
 else {
     console.log("a is equal to b");
 }
+
+//SCope of variables
+// Variables declared with var are function-scoped or globally scoped, while let and const are block-scoped.
+const score = 200
+
+if (score > 100) {
+    let power = "fly"
+    console.log(`User power: ${power}`);
+}
+
+// console.log(`User power: ${power}`);
+// The above code will throw an error because 'power' is not defined outside the if block.
+
+if (balance > 500) console.log("test"),console.log("test2"); 
+// The above code will execute both console.log statements if the condition is true.
+//, is used to separate multiple statements in a single line.
