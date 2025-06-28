@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+</head>
+<body style="background-color: black;color: aliceblue;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(name) {
+        const li=document.createElement('li')
+        li.innerHTML=`${name}`;
+        document.querySelector('.language').
+        appendChild(li)  
+    }
+    addlanguage("Python")
+    addlanguage("C++")
+    function addoptilanguage(name)
+    {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(name))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptilanguage("Golang")
+
+    //Edit
+    const s=document.querySelector("li:nth-child(2)")
+    s.innerHTML="CHECK"
+     //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+</html>
